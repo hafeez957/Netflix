@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="nav-and-header" class="bg-[url('/Images/l')]">
-        <div id="navbar" class="flex justify-between items-center">
+    <div id="nav-and-header" class="bg-[url('./Images/background.jpg')] bg-cover bg-center h-screen pb-10 bg-gradient-to-r from-black via-transparent to-black">
+        <div id="navbar" class="flex justify-between items-center h-[100px] ">
             <div id="logo" class="">
                 <img src="./Images/asset 0.png" alt="logo" class="h-[70px]">
             </div>
-            <div id="buutons" class="m-10 flex items-center">
-                <div id="languages" class="flex border p-1">
-                    <img src="./Images/asset 4.svg" alt="">
+            <div id="buutons" class="flex items-center gap-2 sm:gap-8 mr-8 text-white">
+                <div id="languages" class="flex border border-gray-400 items-center p-1">
+                    <i class="fa-solid fa-language"></i>
                     <select name="Languages" id="">
                     <option value="Hindi">English</option>
                     <option value="Hindi">Hindi</option>
                 </select>
                 </div>
-                <buutons class="bg-red-600 text-white rounded px-3 py-1 ml-5">Sign In</buutons>
+                <buutons class="bg-red-600 text-white rounded p-1 sm:px-3 sm:py-1">Sign In</buutons>
             </div>
+        </div>
+        <div id="hero-section" class="text-center text-balance p-4 mt-20">
+           <div id="heading" class="block sm:hidden text-3xl text-white font-bold p-2">
+             <h1 class=" ">Unlimited movies,shows, </h1>
+            <h1 class="">and more</h1>
+           </div>
+           <div id="heading" class="hidden sm:block text-5xl text-white font-bold p-2">
+             <h1 class="">Unlimited movies, </h1>
+            <h1 class="">shows,and more</h1>
+           </div>
+            <h3 class=" text-white p-2 sm:font-semibold">Starts at ₹149. Cancel at any time.</h3>
+            <p class=" text-white">Ready to watch? Enter your email to create or restart your <span class="block md:inline"></span> membership.</p>
+        </div>
+        <div id="input" class=" flex  flex-col sm:flex-row justify-center items-center gap-3 text-white">
+            <input type="email" name="email" placeholder="Email" class="border border-gray-400 bg-black py-2 px-6 rounded">
+            <button class="flex bg-red-600 p-1 py-2 rounded gap-1">Get Started <img src="./Images/asset 6.svg" alt="" class=""></button>
         </div>
     </div>
 </body>
