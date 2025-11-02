@@ -1,10 +1,432 @@
-@import "tailwindcss";
-
-@theme {
-  --color-brand: #1e40af;
-  --font-poppins: "Poppins", sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.btn-primary {
-  @apply bg-brand text-white font-poppins py-2 px-4 rounded-xl hover:bg-brand/90;
+#nav-and-header {
+  background: url('./Images/background.jpg') no-repeat center/cover;
+  height: 100vh;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.208);
+
+}
+
+#logo img {
+  height: 70px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  margin-right: 20px;
+}
+
+#lang {
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+#languages {
+  padding: 2px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+
+.sign {
+  background-color: rgba(255, 0, 0, 0.736);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+#hero-section {
+  text-align: center;
+  margin-top: 150px;
+  color: white;
+}
+
+#heading h1 {
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+#hero-section h3 {
+  padding: 8px 0px 17px 0px;
+}
+
+#hero-section p {
+  font-size: 18px;
+}
+
+#input {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 20px;
+}
+
+input {
+  padding: 14px 45px;
+  border-radius: 4px;
+  border: none;
+  background-color: black;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+  border-radius: 3px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+#curved {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  /* adjust height of the curve */
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom: none;
+  background-color: rgba(179, 24, 24, 0.708);
+}
+
+#trending {
+  background-color: rgba(0, 0, 0, 0.988);
+  color: white;
+  padding: 20px 100px;
+}
+
+#posters {
+  display: flex;
+  flex-flow: row;
+  gap: 25px;
+  margin-top: 15px;
+
+}
+
+#posters img {
+  border: none;
+  border-radius: 4px;
+}
+
+#reasons {
+  background-color: rgba(0, 0, 0, 0.988);
+  color: white;
+  padding: 20px 100px;
+}
+
+#reasons h1 {}
+
+#items-box {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.item {
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(135deg, #1e3a8a, #bd36a7);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.item h2,
+p {
+  padding: 5px;
+}
+
+.item img {
+  position: relative;
+  top: 65px;
+  left: 170px;
+}
+
+.faq {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  font-family: sans-serif;
+  padding: 20px 100px;
+
+  h2 {
+    padding: 10px;
+  }
+}
+
+details {
+  background: #2d2d2d;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+
+  p {
+    padding: 5px;
+
+  }
+}
+
+summary {
+  font-size: 1.2rem;
+  cursor: pointer;
+  list-style: none;
+  padding: 5px;
+}
+
+details[open] {
+  background: #444;
+}
+
+.footer {
+  background-color: #000;
+  color: #b3b3b3;
+  font-family: Arial, sans-serif;
+  padding: 60px 10%;
+}
+
+.footer a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.email-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.email-text {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-form input {
+  padding: 12px 15px;
+  width: 300px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.email-form button {
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.email-form button:hover {
+  background-color: #f40612;
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+
+.contact a {
+  color: #b3b3b3;
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.language-select select {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #666;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #808080;
+}
+
+.recaptcha {
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+.recaptcha a {
+  color: #b3b3b3;
+  text-decoration: underline;
+}
+
+
+@media (max-width:476px) {
+
+  html,
+  body {
+    x-overflow: hidden;
+  }
+
+  #nav-and-header {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  #logo img {
+    height: 50px;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    margin-right: 10px;
+  }
+
+  #heading h1 {
+    font-size: 25px;
+  }
+
+  #hero-section h3 {
+    padding: 8px 0px 7px 0px;
+  }
+
+  #hero-section p {
+    font-size: 17px;
+    padding: 0px;
+  }
+
+  .mid {
+    display: block;
+  }
+
+  #input {
+    flex-flow: column;
+    padding: 40px;
+  }
+
+  #curved {
+    position: relative;
+  }
+
+  #trending {
+    background-color: rgba(0, 0, 0, 0.988);
+    color: white;
+    padding: 20px 30px;
+    h1 {
+      font-size: 30px;
+      text-align:center;
+    }
+  }
+
+  #posters {
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+    gap: 25px;
+    margin-top: 18px;
+
+  }
+
+  #posters img {
+    border: none;
+    height: 200px;
+    width: 130px;
+    border-radius: 4px;
+  }
+
+  .post {
+    display: none;
+  }
+
+  #reasons {
+    background-color: rgba(0, 0, 0, 0.988);
+    color: white;
+    padding: 20px 30px;
+  }
+
+  #reasons h1 {
+    font-size: 30px;
+    text-align:center;
+  }
+
+  #items-box {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow: column;
+  }
+
+  .item {
+    height: 200px;
+    width: 250px;
+    padding: 5px;
+  }
+  
+  .item img {
+    position: relative;
+    top: 5px;
+    left: 170px;
+  }
+
+  .faq {
+    background: #000;
+    color: #fff;
+    padding: .5rem;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    width: 90%; 
+  }
+
+  .email-form {
+    flex-flow: column;
+  }
+
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    gap: 18px;
+    margin-bottom: 30px;
+  }
 }

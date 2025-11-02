@@ -1,45 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div id="nav-and-header" class="bg-[url('./Images/background.jpg')] bg-cover bg-center h-screen pb-10 bg-gradient-to-r from-black via-transparent to-black">
-        <div id="navbar" class="flex justify-between items-center h-[100px] ">
+    <div id="nav-and-header" class="">
+        <div id="navbar" class="">
             <div id="logo" class="">
-                <img src="./Images/asset 0.png" alt="logo" class="h-[70px]">
+                <img src="./Images/asset 0.png" alt="logo" class="">
             </div>
-            <div id="buutons" class="flex items-center gap-2 sm:gap-8 mr-8 text-white">
-                <div id="languages" class="flex border border-gray-400 items-center p-1">
+            <div id="buttons" class=" ">
+                <div id="languages" class=" ">
                     <i class="fa-solid fa-language"></i>
-                    <select name="Languages" id="">
-                    <option value="Hindi">English</option>
-                    <option value="Hindi">Hindi</option>
-                </select>
+                    <select name="Languages" id="lang">
+                        <option value="Hindi" class="">English</option>
+                        <option value="Hindi" class=" ">Hindi</option>
+                    </select>
                 </div>
-                <buutons class="bg-red-600 text-white rounded p-1 sm:px-3 sm:py-1">Sign In</buutons>
+                <buutons class="sign">Sign In</buutons>
             </div>
         </div>
-        <div id="hero-section" class="text-center text-balance p-4 mt-20">
-           <div id="heading" class="block sm:hidden text-3xl text-white font-bold p-2">
-             <h1 class=" ">Unlimited movies,shows, </h1>
-            <h1 class="">and more</h1>
-           </div>
-           <div id="heading" class="hidden sm:block text-5xl text-white font-bold p-2">
-             <h1 class="">Unlimited movies, </h1>
-            <h1 class="">shows,and more</h1>
-           </div>
-            <h3 class=" text-white p-2 sm:font-semibold">Starts at ₹149. Cancel at any time.</h3>
-            <p class=" text-white">Ready to watch? Enter your email to create or restart your <span class="block md:inline"></span> membership.</p>
+        <div id="hero-section" class=" ">
+            <div id="heading" class=" ">
+                <h1 class=" ">Unlimited movies, </h1>
+                <h1 class="">shows, and more</h1>
+            </div>
+            <h3 class="  ">Starts at ₹149. Cancel at any time.</h3>
+            <p class="  ">Ready to watch? Enter your email to create or restart  <span
+                    class="mid"></span>your membership.</p>
         </div>
-        <div id="input" class=" flex  flex-col sm:flex-row justify-center items-center gap-3 text-white">
-            <input type="email" name="email" placeholder="Email" class="border border-gray-400 bg-black py-2 px-6 rounded">
-            <button class="flex bg-red-600 p-1 py-2 rounded gap-1">Get Started <img src="./Images/asset 6.svg" alt="" class=""></button>
+        <div id="input" class="  ">
+            <input type="email" name="email" placeholder="Email" class=" ">
+            <button class="button">Get Started <img src="./Images/asset 6.svg" alt="" class=""></button>
         </div>
     </div>
+    <div id="curved" class=""></div>
+    <div id="trending" class="   ">
+        <h1 class=" ">Trending Now</h1>
+        <div id="posters" class="">
+            <img src="./Images/asset 35.webp" alt="" class="">
+            <img src="./Images/asset 37.webp" alt="">
+            <img src="./Images/asset 38.webp" alt="" class="post">
+            <img src="./Images/asset 39.webp" alt="" class="post">
+            <img src="./Images/asset 31.webp" alt="" class="post">
+            <!-- <img src="./Images/asset 34.webp" alt=""> -->
+            <img src="./Images/asset 33.webp" alt="" class="post">
+        </div>
+    </div>
+    <div id="reasons" class="   ">
+        <h1 class=" ">More reasons to join</h1>
+        <div id="items-box" class="">
+            <div class="item">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                <img src="./Images/asset 8.svg" alt="">
+            </div>
+            <div class="item">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
+                <img src="./Images/asset 9.svg" alt="">
+            </div>
+            <div class="item">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <img src="./Images/asset 10.svg" alt="">
+            </div>
+            <div class="item">
+                <h2>Create profiles for kids</h2>
+                <p>Send kids on adventures with their favourite characters in a space made just for them — free with
+                    your membership.</p>
+                <img src="./Images/asset 11.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>What is Netflix?</summary>
+    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+    <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+  </details>
+  
+  <details>
+      <summary>How much does Netflix cost?</summary>
+      <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+    </details>
+    <details>
+        <summary>Where can I watch?</summary>
+        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+        <p>You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+    </details>
+    <details>
+        <summary>How do I cancel?</summary>
+        <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+      </details>
+    <details>
+        <summary>What can I watch on Netflix?</summary>
+        <p>Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+      </details>
+    <details>
+        <summary>Is Netflix good for kids?</summary>
+        <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p>
+        <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+      </details>
+</section>
+
+<footer class="footer">
+  <div class="email-section">
+    <p class="email-text">
+      Ready to watch? Enter your email to create or restart your membership.
+    </p>
+    <div class="email-form">
+      <input type="email" placeholder="Email address" />
+      <button>Get Started ></button>
+    </div>
+  </div>
+
+  <p class="contact">
+    Questions? Call
+    <a href="tel:000-800-919-1743">000-800-919-1743</a>
+  </p>
+
+  <div class="footer-links">
+    <a href="#">FAQ</a>
+    <a href="#">Help Centre</a>
+    <a href="#">Account</a>
+    <a href="#">Media Centre</a>
+
+    <a href="#">Investor Relations</a>
+    <a href="#">Jobs</a>
+    <a href="#">Ways to Watch</a>
+    <a href="#">Terms of Use</a>
+
+    <a href="#">Privacy</a>
+    <a href="#">Cookie Preferences</a>
+    <a href="#">Corporate Information</a>
+    <a href="#">Contact Us</a>
+
+    <a href="#">Speed Test</a>
+    <a href="#">Legal Notices</a>
+    <a href="#">Only on Netflix</a>
+  </div>
+
+  <div class="language-select">
+    <select>
+      <option>English</option>
+      <option>हिन्दी</option>
+    </select>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Netflix India</p>
+    <p class="recaptcha">
+      This page is protected by Google reCAPTCHA to ensure you're not a bot.
+      <a href="#">Learn more.</a>
+    </p>
+  </div>
+</footer>
 </body>
 </html>
