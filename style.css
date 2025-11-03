@@ -6,6 +6,7 @@
 #nav-and-header {
   background: url('./Images/background.jpg') no-repeat center/cover;
   height: 100vh;
+  
 }
 
 #navbar {
@@ -52,8 +53,11 @@
   text-align: center;
   margin-top: 150px;
   color: white;
+  
 }
-
+#nav-and-header .back{
+  background-color: #0000008e;
+}
 #heading h1 {
   font-size: 50px;
   font-weight: bold;
@@ -132,8 +136,6 @@ input {
   color: white;
   padding: 20px 100px;
 }
-
-#reasons h1 {}
 
 #items-box {
   display: flex;
